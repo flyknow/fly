@@ -1,0 +1,2 @@
+cn.iocoder.fly.framework.tracer.config.FlyTracerAutoConfiguration
+cn.iocoder.fly.framework.tracer.config.FlyMetricsAutoConfiguration

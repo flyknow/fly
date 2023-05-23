@@ -1,0 +1,2 @@
+cn.iocoder.fly.framework.idempotent.config.FlyIdempotentConfiguration
+cn.iocoder.fly.framework.lock4j.config.FlyLock4jConfiguration

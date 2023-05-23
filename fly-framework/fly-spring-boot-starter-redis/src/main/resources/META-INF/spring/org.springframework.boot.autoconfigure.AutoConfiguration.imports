@@ -1,0 +1,2 @@
+cn.iocoder.fly.framework.redis.config.FlyRedisAutoConfiguration
+cn.iocoder.fly.framework.redis.config.FlyCacheAutoConfiguration

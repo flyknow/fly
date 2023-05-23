@@ -1,0 +1,2 @@
+cn.iocoder.fly.framework.datasource.config.FlyDataSourceAutoConfiguration
+cn.iocoder.fly.framework.mybatis.config.FlyMybatisAutoConfiguration

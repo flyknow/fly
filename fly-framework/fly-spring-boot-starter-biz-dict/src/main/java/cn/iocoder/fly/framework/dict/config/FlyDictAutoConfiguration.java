@@ -1,0 +1,18 @@
+package cn.iocoder.fly.framework.dict.config;
+
+import cn.iocoder.fly.framework.dict.core.util.DictFrameworkUtils;
+import cn.iocoder.fly.module.system.api.dict.DictDataApi;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.context.annotation.Bean;
+
+@AutoConfiguration
+public class FlyDictAutoConfiguration {
+
+    @Bean
+    @SuppressWarnings("InstantiationOfUtilityClass")
+    public DictFrameworkUtils dictUtils(DictDataApi dictDataApi) {
+        DictFrameworkUtils.init(dictDataApi);
+        return new DictFrameworkUtils();
+    }
+
+}

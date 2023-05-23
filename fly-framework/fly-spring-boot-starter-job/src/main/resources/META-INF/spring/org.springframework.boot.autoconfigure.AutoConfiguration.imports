@@ -1,0 +1,2 @@
+cn.iocoder.fly.framework.quartz.config.FlyQuartzAutoConfiguration
+cn.iocoder.fly.framework.quartz.config.FlyAsyncAutoConfiguration

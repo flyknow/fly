@@ -1,0 +1,6 @@
+cn.iocoder.fly.framework.apilog.config.FlyApiLogAutoConfiguration
+cn.iocoder.fly.framework.jackson.config.FlyJacksonAutoConfiguration
+com.github.xiaoymin.knife4j.spring.configuration.Knife4jAutoConfiguration
+cn.iocoder.fly.framework.swagger.config.FlySwaggerAutoConfiguration
+cn.iocoder.fly.framework.web.config.FlyWebAutoConfiguration
+cn.iocoder.fly.framework.xss.config.FlyXssAutoConfiguration
