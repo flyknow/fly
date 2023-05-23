@@ -145,7 +145,7 @@ export default {
         mobile: "",
         mobileCode: "",
         rememberMe: false,
-        tenantName: "芋道源码",
+        tenantName: "Fly",
       },
       scene: 21,
 
