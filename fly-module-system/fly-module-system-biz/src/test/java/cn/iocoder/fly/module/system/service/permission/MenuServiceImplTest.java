@@ -182,7 +182,7 @@ public class MenuServiceImplTest extends BaseDbUnitTest {
         // 测试 status 不匹配
         menuMapper.insert(cloneIgnoreId(menuDO, o -> o.setStatus(CommonStatusEnum.DISABLE.getStatus())));
         // 测试 name 不匹配
-        menuMapper.insert(cloneIgnoreId(menuDO, o -> o.setName("艿")));
+        menuMapper.insert(cloneIgnoreId(menuDO, o -> o.setName("字")));
         // 准备参数
         MenuListReqVO reqVO = new MenuListReqVO().setName("芋").setStatus(CommonStatusEnum.ENABLE.getStatus());
 

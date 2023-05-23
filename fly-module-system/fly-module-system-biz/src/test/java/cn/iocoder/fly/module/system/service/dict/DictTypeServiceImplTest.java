@@ -62,7 +62,7 @@ public class DictTypeServiceImplTest extends BaseDbUnitTest {
        // 准备参数
        DictTypePageReqVO reqVO = new DictTypePageReqVO();
        reqVO.setName("nai");
-       reqVO.setType("艿");
+       reqVO.setType("字");
        reqVO.setStatus(CommonStatusEnum.ENABLE.getStatus());
        reqVO.setCreateTime(buildBetweenTime(2021, 1, 10, 2021, 1, 20));
 
@@ -95,7 +95,7 @@ public class DictTypeServiceImplTest extends BaseDbUnitTest {
         // 准备参数
         DictTypeExportReqVO reqVO = new DictTypeExportReqVO();
         reqVO.setName("nai");
-        reqVO.setType("艿");
+        reqVO.setType("字");
         reqVO.setStatus(CommonStatusEnum.ENABLE.getStatus());
         reqVO.setCreateTime(buildBetweenTime(2021, 1, 10, 2021, 1, 20));
 

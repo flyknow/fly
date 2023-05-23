@@ -24,7 +24,7 @@ public class DebugDingTalkSmsClientIntegrationTest {
         // 创建配置类
         SmsChannelProperties properties = new SmsChannelProperties();
         properties.setId(1L);
-        properties.setSignature("芋道");
+        properties.setSignature("fly");
         properties.setCode(SmsChannelEnum.DEBUG_DING_TALK.getCode());
         properties.setApiKey("696b5d8ead48071237e4aa5861ff08dbadb2b4ded1c688a7b7c9afc615579859");
         properties.setApiSecret("SEC5c4e5ff888bc8a9923ae47f59e7ccd30af1f14d93c55b4e2c9cb094e35aeed67");

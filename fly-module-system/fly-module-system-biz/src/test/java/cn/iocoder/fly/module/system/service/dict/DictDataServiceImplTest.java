@@ -67,7 +67,7 @@ public class DictDataServiceImplTest extends BaseDbUnitTest {
         });
         dictDataMapper.insert(dbDictData);
         // 测试 label 不匹配
-        dictDataMapper.insert(cloneIgnoreId(dbDictData, o -> o.setLabel("艿")));
+        dictDataMapper.insert(cloneIgnoreId(dbDictData, o -> o.setLabel("字")));
         // 测试 dictType 不匹配
         dictDataMapper.insert(cloneIgnoreId(dbDictData, o -> o.setDictType("nai")));
         // 测试 status 不匹配
@@ -96,7 +96,7 @@ public class DictDataServiceImplTest extends BaseDbUnitTest {
         });
         dictDataMapper.insert(dbDictData);
         // 测试 label 不匹配
-        dictDataMapper.insert(cloneIgnoreId(dbDictData, o -> o.setLabel("艿")));
+        dictDataMapper.insert(cloneIgnoreId(dbDictData, o -> o.setLabel("字")));
         // 测试 dictType 不匹配
         dictDataMapper.insert(cloneIgnoreId(dbDictData, o -> o.setDictType("nai")));
         // 测试 status 不匹配

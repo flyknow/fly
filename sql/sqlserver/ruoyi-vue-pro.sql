@@ -5,7 +5,7 @@
  Source Server Type    : SQL Server
  Source Server Version : 15004198
  Source Host           : 127.0.0.1:1433
- Source Catalog        : ruoyi-vue-pro
+ Source Catalog        : fly
  Source Schema         : dbo
 
  Target Server Type    : SQL Server
@@ -2879,7 +2879,7 @@ GO
 INSERT INTO [dbo].[infra_file_config] ([id], [name], [storage], [remark], [master], [config], [creator], [create_time], [updater], [update_time], [deleted]) VALUES (N'5', N'本地磁盘', N'10', N'测试下本地存储', N'0', N'{"@class":"local.client.core.cn.iocoder.fly.framework.file.LocalFileClientConfig","basePath":"/Users/yunai/file_test","domain":"http://127.0.0.1:48080"}', N'1', N'2022-03-15 23:57:00.0000000', N'1', N'2022-03-26 21:39:26.0000000', N'0')
 GO
 
-INSERT INTO [dbo].[infra_file_config] ([id], [name], [storage], [remark], [master], [config], [creator], [create_time], [updater], [update_time], [deleted]) VALUES (N'11', N'S3 - 七牛云', N'20', NULL, N'1', N'{"@class":"s3.client.core.cn.iocoder.fly.framework.file.S3FileClientConfig","endpoint":"s3-cn-south-1.qiniucs.com","domain":"http://test.fly.iocoder.cn","bucket":"ruoyi-vue-pro","accessKey":"b7yvuhBSAGjmtPhMFcn9iMOxUOY_I06cA_p0ZUx8","accessSecret":"kXM1l5ia1RvSX3QaOEcwI3RLz3Y2rmNszWonKZtP"}', N'1', N'2022-03-19 18:00:03.0000000', N'1', N'2022-03-26 21:39:26.0000000', N'0')
+INSERT INTO [dbo].[infra_file_config] ([id], [name], [storage], [remark], [master], [config], [creator], [create_time], [updater], [update_time], [deleted]) VALUES (N'11', N'S3 - 七牛云', N'20', NULL, N'1', N'{"@class":"s3.client.core.cn.iocoder.fly.framework.file.S3FileClientConfig","endpoint":"s3-cn-south-1.qiniucs.com","domain":"http://test.fly.iocoder.cn","bucket":"fly","accessKey":"b7yvuhBSAGjmtPhMFcn9iMOxUOY_I06cA_p0ZUx8","accessSecret":"kXM1l5ia1RvSX3QaOEcwI3RLz3Y2rmNszWonKZtP"}', N'1', N'2022-03-19 18:00:03.0000000', N'1', N'2022-03-26 21:39:26.0000000', N'0')
 GO
 
 SET IDENTITY_INSERT [dbo].[infra_file_config] OFF
@@ -3723,7 +3723,7 @@ GO
 SET IDENTITY_INSERT [dbo].[pay_app] ON
 GO
 
-INSERT INTO [dbo].[pay_app] ([id], [name], [status], [remark], [pay_notify_url], [refund_notify_url], [merchant_id], [creator], [create_time], [updater], [update_time], [tenant_id], [deleted]) VALUES (N'6', N'芋道', N'0', N'我是一个公众号', N'http://127.0.0.1:28080/api/shop/order/pay-notify', N'http://127.0.0.1', N'1', N'', N'2021-10-23 08:49:25.0000000', N'', N'2022-02-27 04:14:53.0000000', N'1', N'0')
+INSERT INTO [dbo].[pay_app] ([id], [name], [status], [remark], [pay_notify_url], [refund_notify_url], [merchant_id], [creator], [create_time], [updater], [update_time], [tenant_id], [deleted]) VALUES (N'6', N'fly', N'0', N'我是一个公众号', N'http://127.0.0.1:28080/api/shop/order/pay-notify', N'http://127.0.0.1', N'1', N'', N'2021-10-23 08:49:25.0000000', N'', N'2022-02-27 04:14:53.0000000', N'1', N'0')
 GO
 
 SET IDENTITY_INSERT [dbo].[pay_app] OFF
@@ -10738,7 +10738,7 @@ GO
 INSERT INTO [dbo].[system_tenant] ([id], [name], [contact_user_id], [contact_name], [contact_mobile], [status], [domain], [package_id], [expire_time], [account_count], [creator], [create_time], [updater], [update_time], [deleted]) VALUES (N'121', N'小租户', N'110', N'小王2', N'15601691300', N'0', N'http://www.iocoder.cn', N'111', N'2024-03-11 00:00:00.0000000', N'20', N'1', N'2022-02-22 00:56:14.0000000', N'1', N'2022-03-19 18:37:20.0000000', N'0')
 GO
 
-INSERT INTO [dbo].[system_tenant] ([id], [name], [contact_user_id], [contact_name], [contact_mobile], [status], [domain], [package_id], [expire_time], [account_count], [creator], [create_time], [updater], [update_time], [deleted]) VALUES (N'122', N'测试租户', N'113', N'芋道', N'15601691300', N'0', N'https://www.iocoder.cn', N'111', N'2022-04-30 00:00:00.0000000', N'50', N'1', N'2022-03-07 21:37:58.0000000', N'1', N'2022-03-07 21:37:58.0000000', N'0')
+INSERT INTO [dbo].[system_tenant] ([id], [name], [contact_user_id], [contact_name], [contact_mobile], [status], [domain], [package_id], [expire_time], [account_count], [creator], [create_time], [updater], [update_time], [deleted]) VALUES (N'122', N'测试租户', N'113', N'fly', N'15601691300', N'0', N'https://www.iocoder.cn', N'111', N'2022-04-30 00:00:00.0000000', N'50', N'1', N'2022-03-07 21:37:58.0000000', N'1', N'2022-03-07 21:37:58.0000000', N'0')
 GO
 
 SET IDENTITY_INSERT [dbo].[system_tenant] OFF
@@ -11330,7 +11330,7 @@ GO
 INSERT INTO [dbo].[system_users] ([id], [username], [password], [nickname], [remark], [dept_id], [post_ids], [email], [mobile], [sex], [avatar], [status], [login_ip], [login_date], [creator], [create_time], [updater], [update_time], [tenant_id], [deleted]) VALUES (N'1', N'admin', N'$2a$10$0acJOIk2D25/oC87nyclE..0lzeu9DtQ/n3geP4fkun/zIVRhHJIO', N'fly', N'管理员', N'103', N'[1]', N'aoteman@126.com', N'15612345678', N'1', N'http://test.fly.iocoder.cn/48934f2f-92d4-4250-b917-d10d2b262c6a', N'0', N'127.0.0.1', N'2022-05-26 00:51:15.3820000', N'admin', N'2021-01-05 17:03:47.0000000', NULL, N'2022-05-26 00:51:15.3870000', N'1', N'0')
 GO
 
-INSERT INTO [dbo].[system_users] ([id], [username], [password], [nickname], [remark], [dept_id], [post_ids], [email], [mobile], [sex], [avatar], [status], [login_ip], [login_date], [creator], [create_time], [updater], [update_time], [tenant_id], [deleted]) VALUES (N'100', N'fly', N'$2a$10$11U48RhyJ5pSBYWSn12AD./ld671.ycSzJHbyrtpeoMeYiw31eo8a', N'芋道', N'不要吓我', N'104', N'[1]', N'fly@iocoder.cn', N'15601691300', N'1', N'', N'1', N'127.0.0.1', N'2022-05-03 16:49:24.6860000', N'', N'2021-01-07 09:07:17.0000000', NULL, N'2022-05-03 16:49:24.6860000', N'1', N'0')
+INSERT INTO [dbo].[system_users] ([id], [username], [password], [nickname], [remark], [dept_id], [post_ids], [email], [mobile], [sex], [avatar], [status], [login_ip], [login_date], [creator], [create_time], [updater], [update_time], [tenant_id], [deleted]) VALUES (N'100', N'fly', N'$2a$10$11U48RhyJ5pSBYWSn12AD./ld671.ycSzJHbyrtpeoMeYiw31eo8a', N'fly', N'不要吓我', N'104', N'[1]', N'fly@iocoder.cn', N'15601691300', N'1', N'', N'1', N'127.0.0.1', N'2022-05-03 16:49:24.6860000', N'', N'2021-01-07 09:07:17.0000000', NULL, N'2022-05-03 16:49:24.6860000', N'1', N'0')
 GO
 
 INSERT INTO [dbo].[system_users] ([id], [username], [password], [nickname], [remark], [dept_id], [post_ids], [email], [mobile], [sex], [avatar], [status], [login_ip], [login_date], [creator], [create_time], [updater], [update_time], [tenant_id], [deleted]) VALUES (N'103', N'yuanma', N'$2a$10$wWoPT7sqriM2O1YXRL.je.GiL538OR6ZTN8aQZr9JAGdnpCH2tpYe', N'源码', NULL, N'106', NULL, N'yuanma@iocoder.cn', N'15601701300', N'0', N'', N'0', N'127.0.0.1', N'2022-01-18 00:33:40.0000000', N'', N'2021-01-13 23:50:35.0000000', NULL, N'2022-01-18 00:33:40.0000000', N'1', N'0')
@@ -11357,7 +11357,7 @@ GO
 INSERT INTO [dbo].[system_users] ([id], [username], [password], [nickname], [remark], [dept_id], [post_ids], [email], [mobile], [sex], [avatar], [status], [login_ip], [login_date], [creator], [create_time], [updater], [update_time], [tenant_id], [deleted]) VALUES (N'112', N'newobject', N'$2a$10$jh5MsR.ud/gKe3mVeUp5t.nEXGDSmHyv5OYjWQwHO8wlGmMSI9Twy', N'新对象', NULL, NULL, N'[]', N'', N'', N'0', N'', N'0', N'', NULL, N'1', N'2022-02-23 19:08:03.0000000', N'1', N'2022-02-23 19:08:03.0000000', N'1', N'0')
 GO
 
-INSERT INTO [dbo].[system_users] ([id], [username], [password], [nickname], [remark], [dept_id], [post_ids], [email], [mobile], [sex], [avatar], [status], [login_ip], [login_date], [creator], [create_time], [updater], [update_time], [tenant_id], [deleted]) VALUES (N'113', N'aoteman', N'$2a$10$0acJOIk2D25/oC87nyclE..0lzeu9DtQ/n3geP4fkun/zIVRhHJIO', N'芋道', NULL, NULL, NULL, N'', N'15601691300', N'0', N'', N'0', N'127.0.0.1', N'2022-03-19 18:38:51.0000000', N'1', N'2022-03-07 21:37:58.0000000', NULL, N'2022-03-19 18:38:51.0000000', N'122', N'0')
+INSERT INTO [dbo].[system_users] ([id], [username], [password], [nickname], [remark], [dept_id], [post_ids], [email], [mobile], [sex], [avatar], [status], [login_ip], [login_date], [creator], [create_time], [updater], [update_time], [tenant_id], [deleted]) VALUES (N'113', N'aoteman', N'$2a$10$0acJOIk2D25/oC87nyclE..0lzeu9DtQ/n3geP4fkun/zIVRhHJIO', N'fly', NULL, NULL, NULL, N'', N'15601691300', N'0', N'', N'0', N'127.0.0.1', N'2022-03-19 18:38:51.0000000', N'1', N'2022-03-07 21:37:58.0000000', NULL, N'2022-03-19 18:38:51.0000000', N'122', N'0')
 GO
 
 INSERT INTO [dbo].[system_users] ([id], [username], [password], [nickname], [remark], [dept_id], [post_ids], [email], [mobile], [sex], [avatar], [status], [login_ip], [login_date], [creator], [create_time], [updater], [update_time], [tenant_id], [deleted]) VALUES (N'114', N'hrmgr', N'$2a$10$TR4eybBioGRhBmDBWkqWLO6NIh3mzYa8KBKDDB5woiGYFVlRAi.fu', N'hr 小姐姐', NULL, NULL, N'[3]', N'', N'', N'0', N'', N'0', N'127.0.0.1', N'2022-03-19 22:15:43.0000000', N'1', N'2022-03-19 21:50:58.0000000', NULL, N'2022-03-19 22:15:43.0000000', N'1', N'0')

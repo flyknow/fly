@@ -50,7 +50,7 @@ public class CodegenController {
     @Parameters({
             @Parameter(name = "dataSourceConfigId", description = "数据源配置的编号", required = true, example = "1"),
             @Parameter(name = "name", description = "表名，模糊匹配", example = "fly"),
-            @Parameter(name = "comment", description = "描述，模糊匹配", example = "芋道")
+            @Parameter(name = "comment", description = "描述，模糊匹配", example = "fly")
     })
     @PreAuthorize("@ss.hasPermission('infra:codegen:query')")
     public CommonResult<List<DatabaseTableRespVO>> getDatabaseTableList(

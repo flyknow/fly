@@ -1,8 +1,8 @@
 {
   "name": "fly-ui-admin",
   "version": "1.7.2-snapshot",
-  "description": "芋道管理系统",
-  "author": "芋道",
+  "description": "FLY理财管理系统",
+  "author": "fly",
   "license": "MIT",
   "scripts": {
     "local": "vue-cli-service serve --mode local",
@@ -38,7 +38,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/YunaiV/ruoyi-vue-pro"
+    "url": "https://github.com/YunaiV/fly"
   },
   "dependencies": {
     "@babel/parser": "7.18.4",

@@ -46,8 +46,8 @@ docker compose --env-file docker.env up -d
 
 ```shell
 docker exec -i fly-mysql \
-    sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD" ruoyi-vue-pro' \
-    < ./sql/mysql/ruoyi-vue-pro.sql
+    sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD" fly' \
+    < ./sql/mysql/fly.sql
 ```
 
 注意：这里用docker compose exec 会出现 `the input device is not a TTY` 报错

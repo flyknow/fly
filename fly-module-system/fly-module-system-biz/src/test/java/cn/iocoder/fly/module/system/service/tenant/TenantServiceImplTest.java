@@ -146,14 +146,14 @@ public class TenantServiceImplTest extends BaseDbUnitTest {
         when(userService.createUser(argThat(user -> {
             assertEquals("yunai", user.getUsername());
             assertEquals("yuanma", user.getPassword());
-            assertEquals("芋道", user.getNickname());
+            assertEquals("fly", user.getNickname());
             assertEquals("15601691300", user.getMobile());
             return true;
         }))).thenReturn(300L);
 
         // 准备参数
         TenantCreateReqVO reqVO = randomPojo(TenantCreateReqVO.class, o -> {
-            o.setContactName("芋道");
+            o.setContactName("fly");
             o.setContactMobile("15601691300");
             o.setPackageId(100L);
             o.setStatus(randomCommonStatus());
@@ -307,8 +307,8 @@ public class TenantServiceImplTest extends BaseDbUnitTest {
         tenantMapper.insert(cloneIgnoreId(dbTenant, o -> o.setCreateTime(buildTime(2021, 12, 12))));
         // 准备参数
         TenantPageReqVO reqVO = new TenantPageReqVO();
-        reqVO.setName("芋道");
-        reqVO.setContactName("艿");
+        reqVO.setName("fly");
+        reqVO.setContactName("字");
         reqVO.setContactMobile("1560");
         reqVO.setStatus(CommonStatusEnum.ENABLE.getStatus());
         reqVO.setCreateTime(buildBetweenTime(2020, 12, 1, 2020, 12, 24));
@@ -344,8 +344,8 @@ public class TenantServiceImplTest extends BaseDbUnitTest {
         tenantMapper.insert(cloneIgnoreId(dbTenant, o -> o.setCreateTime(buildTime(2021, 12, 12))));
         // 准备参数
         TenantExportReqVO reqVO = new TenantExportReqVO();
-        reqVO.setName("芋道");
-        reqVO.setContactName("艿");
+        reqVO.setName("fly");
+        reqVO.setContactName("字");
         reqVO.setContactMobile("1560");
         reqVO.setStatus(CommonStatusEnum.ENABLE.getStatus());
         reqVO.setCreateTime(buildBetweenTime(2020, 12, 1, 2020, 12, 24));
@@ -360,11 +360,11 @@ public class TenantServiceImplTest extends BaseDbUnitTest {
     @Test
     public void testGetTenantByName() {
         // mock 数据
-        TenantDO dbTenant = randomPojo(TenantDO.class, o -> o.setName("芋道"));
+        TenantDO dbTenant = randomPojo(TenantDO.class, o -> o.setName("fly"));
         tenantMapper.insert(dbTenant);// @Sql: 先插入出一条存在的数据
 
         // 调用
-        TenantDO result = tenantService.getTenantByName("芋道");
+        TenantDO result = tenantService.getTenantByName("fly");
         // 校验存在
         assertPojoEquals(result, dbTenant);
     }

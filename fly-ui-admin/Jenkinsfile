@@ -18,7 +18,7 @@ pipeline {
   stages {
     stage('检出') {
       steps {
-        git url: "https://gitee.com/will-we/ruoyi-vue-pro.git",
+        git url: "https://gitee.com/will-we/fly.git",
           branch: "devops"
       }
     }

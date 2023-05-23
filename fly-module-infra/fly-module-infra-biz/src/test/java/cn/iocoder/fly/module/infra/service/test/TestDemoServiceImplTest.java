@@ -128,7 +128,7 @@ public class TestDemoServiceImplTest extends BaseDbUnitTest {
         testDemoMapper.insert(cloneIgnoreId(dbTestDemo, o -> o.setCreateTime(buildTime(2021, 12, 12))));
         // 准备参数
         TestDemoPageReqVO reqVO = new TestDemoPageReqVO();
-        reqVO.setName("芋道");
+        reqVO.setName("fly");
         reqVO.setStatus(CommonStatusEnum.ENABLE.getStatus());
         reqVO.setType(1);
         reqVO.setCategory(2);
@@ -169,7 +169,7 @@ public class TestDemoServiceImplTest extends BaseDbUnitTest {
         testDemoMapper.insert(cloneIgnoreId(dbTestDemo, o -> o.setCreateTime(buildTime(2021, 12, 12))));
         // 准备参数
         TestDemoExportReqVO reqVO = new TestDemoExportReqVO();
-        reqVO.setName("芋道");
+        reqVO.setName("fly");
         reqVO.setStatus(CommonStatusEnum.ENABLE.getStatus());
         reqVO.setType(1);
         reqVO.setCategory(2);

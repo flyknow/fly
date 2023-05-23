@@ -12,7 +12,7 @@ import static cn.iocoder.fly.framework.common.util.date.DateUtils.FORMAT_YEAR_MO
 @Data
 public class TenantExportReqVO {
 
-    @Schema(description = "租户名", example = "芋道")
+    @Schema(description = "租户名", example = "fly")
     private String name;
 
     @Schema(description = "联系人", example = "芋艿")

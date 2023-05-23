@@ -8,7 +8,7 @@ Authorization: Bearer {{token}}
 tenant-id: {{adminTenentId}}
 
 {
-  "name": "芋道",
+  "name": "fly",
   "contactName": "芋艿",
   "contactMobile": "15601691300",
   "status": 0,

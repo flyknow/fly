@@ -15,7 +15,7 @@ import static cn.iocoder.fly.framework.common.util.date.DateUtils.FORMAT_YEAR_MO
 @EqualsAndHashCode(callSuper = true)
 public class RolePageReqVO extends PageParam {
 
-    @Schema(description = "角色名称,模糊匹配", example = "芋道")
+    @Schema(description = "角色名称,模糊匹配", example = "fly")
     private String name;
 
     @Schema(description = "角色标识,模糊匹配", example = "fly")
