@@ -1,6 +1,5 @@
 <template>
   <div class="app-container">
-    <doc-alert title="功能开启" url="https://doc.iocoder.cn/mall/build/" />
 
     <!-- 操作工具栏 -->
     <el-row :gutter="10" class="mb8">
